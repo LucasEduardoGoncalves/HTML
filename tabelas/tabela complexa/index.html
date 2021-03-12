@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela complexa</title>
+</head>
+
+<style>
+    table{
+    text-align: center;
+    }
+</style>
+
+<body>
+    <table>
+        <caption>Produzidos X Vendidos</caption> <!--cabeçalho da tabelela-->
+        
+        <colgroup>
+        <col>
+        <col span="2" style="background-color: rgb(0, 255, 234);">
+        <col span="2" style="background-color: aquamarine;">
+        </colgroup>
+        
+        <thead> <!--cabeça da tabela-->
+            <tr>
+                <th rowspan="2"></th> <!--rowspan = linhas-->
+                <th colspan="2">Afonso pena</th> <!--colspan = colunas-->
+                <th colspan="2">José Silva</th>
+            </tr>
+            <tr> <!-- todos abaixo são titulos das colunas-->
+                <th>Produzidos</th>
+                <th>Vendidos</th>
+                <th>Produzidos</th>
+                <th>Vendidos</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>Vassouras</th> <!-- titulo da linha-->
+                <td>50</td> <!--item da lista-->
+                <td>21</td>
+                <td>65</td>
+                <td>15</td>
+            </tr>
+
+            <tr>
+                <th>Baldes</th>
+                <td>54</td>
+                <td>96</td>
+                <td>31</td>
+                <td>46</td>
+            </tr>
+
+        </tbody>
+    </table> 
+</body>
+</html>
